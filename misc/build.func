@@ -13,7 +13,7 @@ variables() {
   METHOD="default"                                  # sets the METHOD variable to "default", used for the API call.
   RANDOM_UUID="$(cat /proc/sys/kernel/random/uuid)" # generates a random UUID and sets it to the RANDOM_UUID variable.
   CT_TYPE=${var_unprivileged:-$CT_TYPE}
-  FILE_GRABBER                                      #sets the file grabber utility and arguments (default curl, alternative wget)
+  FILE_GRABBER="curl -fsSL"                                     #sets the file grabber utility and arguments (default curl, alternative wget)
 }
 
 
