@@ -1290,7 +1290,7 @@ EOF
         msg_ok "Network in LXC is reachable"
         break
       fi
-      if pct exec "$CTID" -- $FILE_GRABBER --max-time 10 deb.debian.org >/dev/null 2>&1; then
+      if pct exec "$CTID" -- $FILE_GRABBER deb.debian.org >/dev/null 2>&1; then
         msg_ok "Network in LXC is reachable"
         break
       fi
